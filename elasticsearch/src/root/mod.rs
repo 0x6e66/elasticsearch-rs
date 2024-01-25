@@ -2934,7 +2934,7 @@ impl<'b> GetParts<'b> {
                 let mut p = String::with_capacity(7usize + encoded_index.len() + encoded_id.len());
                 p.push_str("/");
                 p.push_str(encoded_index.as_ref());
-                p.push_str("/_doc/");
+                p.push_str("/");
                 p.push_str(encoded_id.as_ref());
                 p.into()
             }
